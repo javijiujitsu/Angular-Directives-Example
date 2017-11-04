@@ -1,3 +1,9 @@
 <h1>
-  ng-for-example works!
+  Animals!
 </h1>
+
+<ul>
+    <li *ngFor="let animal of animals, let i = index, let x = odd">
+        {{ i }} - {{ x }} - {{animal.name}}
+    </li>
+</ul>
