@@ -1,3 +1,28 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 <app-ng-for-example></app-ng-for-example>
+
+<div class="container" [ngSwitch]="value">
+  <div *ngSwitchCase="1"> Value is A </div>
+  <div *ngSwitchCase="2"> Value is B </div>
+  <div *ngSwitchDefault> Value is something else </div>
+</div>
+
+<!-- HTML markup -->
+<div [ngClass]="{ bordered: false }">
+    This is never bordered
+</div>
+
+<div [ngClass]="{ bordered: true }">
+    This is always bordered
+</div>
+
+<div [ngClass]="{ transparent: isTransparent }">
+    This is trasparent if "isTransparent" class property evaluates to "true"
+</div>
+
+
+
+<div [ngStyle]="{ 'background-color': 'blue', 'border': '2px solid orange' }">
+    Blue background here
+</div>
