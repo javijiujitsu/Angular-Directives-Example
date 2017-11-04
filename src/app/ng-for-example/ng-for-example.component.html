@@ -3,7 +3,8 @@
 </h1>
 
 <ul>
-    <li *ngFor="let animal of animals, let i = index, let x = odd">
-        {{ i }} - {{ x }} - {{animal.name}}
+    <li *ngFor="let animal of animals; trackBy:animalTrackerFunction">
+        <span>  {{ animal.name }} </span>
+        <small> {{ animal.category }} </small>
     </li>
 </ul>

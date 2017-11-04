@@ -27,5 +27,8 @@ export class NgForExampleComponent implements OnInit {
 
   ngOnInit() {
   }
+  animalTrackerFunction(index: number, animal: any) {
+    return animal.id;
+}
 
 }
